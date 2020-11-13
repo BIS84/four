@@ -4,6 +4,17 @@ import homework.four.job.members;
 
 public class Main {
 
+    // Task 6
+    private static void salaryPlus(members Members[]) {
+        for (int i = 0; i < 5; i++) {
+            members member = Members[i];
+            if (member.getAge() > 45) {
+                float newSalary = member.getSalary() + 5000;
+                member.setSalary(newSalary);
+            }
+        }
+    }
+
     public  static void main(String[] args) {
         // Task 4
         members member0 = new members("Ivanov Ivan Ivanovich", "director", 11111111111l, 2000000, 55);
@@ -27,6 +38,15 @@ public class Main {
                 System.out.println(member.getAge());
                 System.out.println();
             }
+        }
+
+        // Task 6
+        salaryPlus(Members);
+        for (int i = 0; i < 5; i++) {
+            members member = Members[i];
+            System.out.println(member.getFullName());
+            System.out.println(member.getSalary());
+            System.out.println();
         }
     }
 }

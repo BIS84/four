@@ -24,4 +24,7 @@ public class members {
     public float getSalary() {return salary; }
 
     public int getAge() {return age; }
+
+    /// Task 6
+    public void setSalary(float salary) {this.salary = salary; }
 }
